@@ -19,10 +19,22 @@ public class Libro {
     }
 
     public void prestar() {
-        prestado = true;
+        if (!prestado) {
+            prestado = true;
+        }
     }
 
     public void devolver() {
-        prestado = false;
+        if (prestado) {
+            prestado = false;
+        }
+    }
+
+    @Override
+    public String toString() {
+        return "Libro{" +
+                "titulo='" + titulo + '\'' +
+                ", prestado=" + prestado +
+                '}';
     }
 }
