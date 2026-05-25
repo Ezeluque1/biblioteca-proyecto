@@ -13,4 +13,15 @@ public class Biblioteca {
     public List<Libro> getLibros() {
         return libros;
     }
+    public Libro buscarLibro(String titulo) {
+
+    for (Libro libro : libros) {
+
+        if (libro.getTitulo().equalsIgnoreCase(titulo)) {
+            return libro;
+        }
+    }
+
+    return null;
+}
 }
