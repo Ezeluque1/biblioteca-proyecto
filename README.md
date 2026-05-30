@@ -27,13 +27,9 @@ Permite cambiar dinámicamente la forma de búsqueda de libros (por título, aut
 
 ## ▶️ Cómo ejecutar el proyecto
 
-1. Compilar:
-```bash
-javac Main.java
+mvn clean compile
 
-java Main
-
----
+mvn exec:java "-Dexec.mainClass=com.biblioteca.Main"
 
 # ⭐ 1. Estructura del proyecto
 
